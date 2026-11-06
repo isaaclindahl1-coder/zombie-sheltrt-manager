@@ -20,12 +20,23 @@ except FileNotFoundError:
     print("No reading journal entries have been saved yet.")
 
 def menu():
-    print("Zombie Shelter Manager:")
-    print("1. Veiw shelter information")
-    print("2. Change a shelter value")
-    print("3. Veiw change log")
-    print("4. Quit")
-    manger_input = input("Enter a option (1 thru 4)")
-
+    while True:
+        print("Zombie Shelter Manager:")
+        print("1. Veiw shelter information")
+        print("2. Change a shelter value")
+        print("3. Veiw change log")
+        print("4. Quit")
+        manger_input = input("Enter a option (1 thru 4)")
+        if manger_input is 1:
+            print("")
+        elif manger_input is 2:
+            print("")
+        elif manger_input is 3:
+            print("")
+        elif manger_input is 4:
+            print("")
+            break
+        else:
+            print("Please try again")
 
 menu()

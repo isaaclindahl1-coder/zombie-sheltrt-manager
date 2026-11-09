@@ -1,6 +1,9 @@
 import json
 from datetime import datetime
 
+def shelter():
+    with open("shelter.json", "r") as file:
+        info = json.load(file)
 
 time_stamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 entry = f"{time_stamp} | Finished Chapter 3"
@@ -26,17 +29,19 @@ def menu():
         print("2. Change a shelter value")
         print("3. Veiw change log")
         print("4. Quit")
-        manger_input = input("Enter a option (1 thru 4)")
-        if manger_input is 1:
-            print("")
-        elif manger_input is 2:
-            print("")
-        elif manger_input is 3:
-            print("")
-        elif manger_input is 4:
+        manger_input = input("Enter a option (1 thru 4): ")
+        if manger_input is "1":
+            print("Veiwing shelter infromation")
+        elif manger_input is "2":
+            print("Changing shelter value")
+        elif manger_input is "3":
+            print("Veiwing change log")
+        elif manger_input is "4":
             print("")
             break
         else:
             print("Please try again")
 
 menu()
+
+shelter1 = shelter()

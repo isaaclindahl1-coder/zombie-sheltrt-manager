@@ -60,4 +60,5 @@ while loop != False:
     menu()
 
 def shelter_values():
-    print
+    for thing, data in shelter:
+        

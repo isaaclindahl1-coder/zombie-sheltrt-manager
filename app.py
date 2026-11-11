@@ -35,6 +35,22 @@ try:
 except FileNotFoundError:
     print("No reading journal entries have been saved yet.")
 
+
+def shelter_values():
+    print("Shelter Values function started!")
+    for thing, data in shelter_data.items():
+        if type(data) == bool:
+            print(f'{thing}: {"Yes" if data else "No"}')
+        else:
+            print(thing, data)
+        # if thing == "radio_working" and data == True:
+        #     print("Radio Working: YES")
+        # else:
+        #     print("Radio Working: NO")
+
+        
+
+
 def menu():
     while True:
         print("Zombie Shelter Manager:")
@@ -45,6 +61,7 @@ def menu():
         manger_input = input("Enter a option (1 thru 4): ")
         if manger_input == "1":
             print("Veiwing shelter infromation")
+            shelter_values()
         elif manger_input == "2":
             print("Changing shelter value")
         elif manger_input == "3":
@@ -58,7 +75,3 @@ def menu():
 loop = test_for_file()
 while loop != False:
     menu()
-
-def shelter_values():
-    for thing, data in shelter:
-        

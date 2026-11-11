@@ -48,7 +48,9 @@ def shelter_values():
         # else:
         #     print("Radio Working: NO")
 
-        
+
+def shelter_change_value():
+    print("Change Shelter Value Started!")
 
 
 def menu():
@@ -64,6 +66,7 @@ def menu():
             shelter_values()
         elif manger_input == "2":
             print("Changing shelter value")
+            shelter_change_value()
         elif manger_input == "3":
             print("Veiwing change log")
         elif manger_input == "4":

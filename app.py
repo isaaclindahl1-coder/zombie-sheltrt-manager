@@ -49,8 +49,10 @@ def shelter_values():
         #     print("Radio Working: NO")
 
 
-def shelter_change_value():
+def shelter_change_value(dict):
     print("Change Shelter Value Started!")
+    for thing, data in shelter_data.items():
+        print(thing, data)
 
 
 def menu():

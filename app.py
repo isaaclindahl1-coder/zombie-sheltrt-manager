@@ -51,8 +51,11 @@ def shelter_values():
 
 def shelter_change_value(dict):
     print("Change Shelter Value Started!")
-    for thing, data in shelter_data.items():
-        print(thing, data)
+    # for thing, data in shelter_data.items():
+    #     print(thing, data)
+    while True:
+        print("choose what you need to change (1 through 7):")
+        print()
 
 
 def menu():
@@ -68,7 +71,7 @@ def menu():
             shelter_values()
         elif manger_input == "2":
             print("Changing shelter value")
-            shelter_change_value()
+            shelter_change_value(dict)
         elif manger_input == "3":
             print("Veiwing change log")
         elif manger_input == "4":

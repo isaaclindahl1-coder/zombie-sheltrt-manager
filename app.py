@@ -55,7 +55,7 @@ def shelter_change_value(dict):
     #     print(thing, data)
     while True:
         print("choose what you need to change (1 through 7):")
-        print()
+        
 
 
 def menu():
@@ -76,7 +76,7 @@ def menu():
             print("Veiwing change log")
         elif manger_input == "4":
             print("Thank you for managing the shelter!")
-            return
+            break
         else:
             print("Please try again")
 
